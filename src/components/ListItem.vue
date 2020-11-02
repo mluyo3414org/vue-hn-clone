@@ -29,22 +29,3 @@
     padding-top 10px
   }
 </style>
-<script>
-import { Flags } from '../utils/flag'
-
-export default {
-  props: {
-    title: String,
-    user: String,
-    link: String,
-    comment_link: String,
-    score: Number,
-    comment_count: Number
-  },
-  data () {
-    return {
-      show_score: Flags.score.isEnabled()
-    }
-  }
-}
-</script>
